@@ -1,13 +1,9 @@
-import React, { useContext } from "react";
-import { PlayButtonIcon } from "../../assets/svg";
-
+import React from "react";
 import { FaPlay as PlayIcon } from "react-icons/fa";
 import { PiSpeakerSlash as VolumeIcon } from "react-icons/pi";
 import { GrClosedCaption as CaptionIcon } from "react-icons/gr";
-import Logo from "../../assets/svg/Logo.svg";
 import TutorImage from "../../assets/images/defaultPic.jpg";
 import { useNavigate } from "react-router-dom";
-// import MainContext from "../../services/context";
 
 import {
   SocialsCardContainer,
@@ -24,20 +20,19 @@ import {
   Description,
 } from "./socialsCard.styles";
 import { colors } from "../../infrastructure/theme/colors";
+import { VideoPlayer } from "../VideoPlayer/videoPlayer.section";
 
 export const SocialsCard = ({ cardImage,username,price,description }) => {
   const navigate = useNavigate();
 
-  // const { setSelectedLesson } = useContext(MainContext);
   const CardVideoHandler = () => {
-    // setSelectedLesson(item);
     navigate("/takeCourse");
   };
 
   return (
     <SocialsCardContainer onClick={CardVideoHandler}>
       <TopSection>
-        <CardImage src={Logo} alt={`Recommended Video Card`} />
+        <VideoPlayer/>
 
         <InfoSection>
           <UsernameWrapper>

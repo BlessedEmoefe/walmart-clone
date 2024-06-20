@@ -5,7 +5,7 @@ export const ModalStyle = styled.div`
   z-index: 90001;
   position: fixed;
   bottom: 0;
-  top: 0;
+  top: ${({ top }) => (top ? top : 0)};
   background: #00000080;
   left: 0px;
   right: 0px;
@@ -40,8 +40,11 @@ export const ExitIconStyle = {
 
 export const ModalChild = styled.div`
 width: 100%;
+height:100%;
+/* background: red; */
 display: flex;
-justify-content: center;
-align-items: center;
+justify-content: flex-start;
+align-items: flex-start;
+position:relative;
 z-index: -1;
 `

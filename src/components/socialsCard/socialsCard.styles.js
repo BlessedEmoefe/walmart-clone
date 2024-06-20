@@ -27,7 +27,7 @@ export const TopSection = styled(FlexibleDiv)`
   position: relative;
   justify-content: center;
   overflow: hidden;
-  height: 60vh;
+  height: 72.5vh;
 
   @media only screen and (max-width: 800px) {
   }
@@ -97,7 +97,7 @@ export const BottomSection = styled(FlexibleDiv)`
   height: max-content;
   overflow: hidden;
   gap: 1rem;
-  width:100%;
+  width: 100%;
   cursor: pointer;
 
   @media only screen and (max-width: 800px) {
@@ -121,7 +121,7 @@ export const DetailWrapper = styled(FlexibleDiv)`
   padding: 0;
   flex: 1;
   /* background: blue; */
-  gap:0.3rem;
+  gap: 0.3rem;
   /* align-items: flex-start;
   justify-content: flex-start; */
   /* height: 40%; */

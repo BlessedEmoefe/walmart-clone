@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
-import { CgClose } from "react-icons/cg";
-import { Exit, ExitIconStyle, ModalChild, ModalStyle } from "./modal.styles";
+import { ModalChild, ModalStyle } from "./modal.styles";
 
-const Modal = ({ children, show, setShowModal, scroll }) => {
+const Modal = ({ children, show, setShowModal, scroll, top }) => {
   // const {showModal,setShowModal} = ModalContext();
 
   useEffect(() => {
@@ -15,24 +14,14 @@ const Modal = ({ children, show, setShowModal, scroll }) => {
     }
   }, [show, scroll]);
 
-  const modalHandler = () => {
-    setShowModal(false);
-  };
-
   return (
     <>
       <ModalStyle
         scroll={scroll ? "scroll" : "hidden"}
         display={show ? "flex" : "none"}
         onClick={() => setShowModal(false)}
+        top={top}
       >
-        <Exit>
-          <CgClose
-            onClick={() => modalHandler()}
-            style={ExitIconStyle}
-            size={"1.6rem"}
-          />
-        </Exit>
         <ModalChild>{children}</ModalChild>
       </ModalStyle>
     </>

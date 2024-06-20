@@ -48,9 +48,9 @@ export const SearchBarWrapper = styled("div")`
 `;
 
 export const SearchInfoContainer = styled(FlexibleDiv)`
-  background: rgba(241, 241, 241, 0.8);
+  background: rgba(241, 241, 241, 1);
   border: ${({ display }) => (display ? "0.8px solid #002069" : 0)};
-  backdrop-filter: blur(50px);
+  /* backdrop-filter: blur(50px); */
   position: absolute;
   z-index: 10;
   top: 5.6rem;

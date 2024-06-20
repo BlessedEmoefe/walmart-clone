@@ -125,15 +125,6 @@ export const NavIconWrapper = styled(FlexibleDiv)`
   }
 `;
 
-export const IconWrapper = styled(FlexibleDiv)`
-  padding: 0;
-  width: max-content;
-  cursor: pointer;
-  /* background: teal; */
-  @media (max-width: 800px) {
-    flex-direction: row;
-  }
-`;
 // export const Icon = styled(ReactIcon)`
 //   @media (max-width: 800px) {
 //   }
@@ -204,7 +195,7 @@ export const AddressText = styled(Text)`
 
 export const SearchBarWrapper = styled(FlexibleDiv)`
   padding: 0;
-  width: 50%;
+  width: 40%;
   @media (max-width: 900px) {
     display: none;
   }
@@ -235,13 +226,14 @@ export const ContentWrapper = styled(FlexibleDiv)`
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
+  gap: 0.2rem;
 `;
 export const TopContent = styled(Text)`
   padding: 0;
   width: max-content;
   align-self: start;
-  font-size: ${fontSizes.caption};
-  line-height: ${fontSizes.body};
+  font-size: ${fontSizes.button};
+  line-height: ${fontSizes.button};
   color: ${colors.white};
   @media (max-width: 900px) {
   }
@@ -250,7 +242,7 @@ export const TopContent = styled(Text)`
 export const BottomContent = styled(Title)`
   padding: 0;
   width: max-content;
-  font-size: ${fontSizes.button};
+  font-size: ${({ cart }) => (cart ? fontSizes.button : fontSizes.smallBody)};
   line-height: ${fontSizes.smallBody};
   color: ${colors.white};
   font-weight: 600;
@@ -317,4 +309,46 @@ export const UserTelNumber = styled(Text)`
 export const ButtonWrapper = styled(FlexibleDiv)`
   padding: 0 1rem;
   width: max-content;
+`;
+
+export const IconWrapper = styled(FlexibleDiv)`
+  padding: 0;
+  width: max-content;
+  cursor: pointer;
+  /* background: teal; */
+  justify-content: center;
+  position: relative;
+  @media (max-width: 800px) {
+    flex-direction: row;
+  }
+`;
+
+export const CartWrapper = styled(FlexibleDiv)`
+  padding: 0;
+  width: max-content;
+  cursor: pointer;
+  flex-direction: column;
+  /* background: teal; */
+  gap: 0.2rem;
+  justify-content: center;
+  position: relative;
+  @media (max-width: 800px) {
+    flex-direction: row;
+  }
+`;
+
+export const Badge = styled(Text)`
+  background: ${colors.yellow};
+  width: max-content;
+  color: #000;
+  border: 1px solid red;
+  padding: 0.1rem 0.2rem;
+  line-height: 8px;
+  border-radius: 0.7rem;
+  font-size: 8px;
+  font-weight: 700;
+  position: absolute;
+  top: -20%;
+  right: -60%;
+  align-self: flex-start;
 `;

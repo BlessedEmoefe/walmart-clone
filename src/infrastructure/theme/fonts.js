@@ -7,7 +7,7 @@ export const fontWeights = {
 
 export const fontSizes = {
   verySmall: "0.5rem" /*"8px"*/,
-  small: "0.625rem" /*"10px"*/,
+  small: "0.7rem" /*"10px"*/,
   caption: "0.75rem" /*"12px"*/,
   button: "0.875rem" /*"14px"*/,
   smallBody: "1rem" /*"16px"*/,

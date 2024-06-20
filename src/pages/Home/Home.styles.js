@@ -50,7 +50,7 @@ export const DualSection = styled(FlexibleDiv)`
   padding: 0;
   /* background: blue; */
   gap: 2%;
-  height:max-content;
+  height: max-content;
 `;
 
 export const LeftSection = styled(FlexibleDiv)`
@@ -58,23 +58,38 @@ export const LeftSection = styled(FlexibleDiv)`
   /* background: red; */
   width: 47%;
 `;
+export const LearnMoreSection = styled(FlexibleDiv)`
+  padding: 1rem;
+  justify-content: center;
+  gap: 1.5rem;
+  border-radius:10px;
+  box-shadow: 0px 5px 31px -5px rgba(0, 0, 0, 0.3);
+`;
+
+export const LearnMoreSectionImage = styled.img`
+  padding: 0;
+  width: 100px;
+  height: 60px;
+  border-radius: 4px;
+  object-fit: cover;
+`;
+
 export const FeedbackSection = styled(FlexibleDiv)`
   padding: 2rem;
   background: ${colors.lightBlueBg.secondVariant};
   flex-direction: column;
-  gap:1.5rem;
+  gap: 1.5rem;
 `;
 
 export const Wrapper = styled(FlexibleDiv)`
   padding: 0;
-  width:max-content;
+  width: max-content;
 `;
 
 export const InfoText = styled(Text)`
   padding: 0;
-  color:${colors.black.strong};
+  color: ${colors.black.strong};
   font-size: ${fontSizes.smallBody};
   line-height: ${fontSizes.body};
   font-weight: 500;
 `;
-

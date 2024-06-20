@@ -14,19 +14,14 @@ import {
   NavSection,
   Wrapper,
   ContentWrapper,
+  CartWrapper,
   TopContent,
   BottomContent,
-  NavIconWrapper,
   IconWrapper,
-  SearchBarAndAvatarWrapper,
   SearchBarWrapper,
-  ProfileInfoSection,
-  UserInfoWrapper,
-  UserName,
-  UserTelNumber,
   AvatarWrapper,
   Avatar,
-  ButtonWrapper,
+  Badge,
 } from "./header.styles";
 
 import { colors } from "../../infrastructure/theme/colors";
@@ -37,19 +32,25 @@ import { AiOutlineMenu as MenuIcon } from "react-icons/ai";
 import { FaChevronDown as DropDownArow } from "react-icons/fa6";
 import { IoMdHeartEmpty as Heart } from "react-icons/io";
 import { MdOutlinePersonOutline as Person } from "react-icons/md";
-import { BsCart2 as Cart } from "react-icons/bs";
-
+import { BsCart as CartIcon } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 
-const Header = ({ smallDrawer, handleNoDrawer, userData }) => {
+const Header = ({
+  smallDrawer,
+  handleNoDrawer,
+  userData,
+  setOpenModal,
+  openModal,
+}) => {
   // const [displayNav, setDisplayNav] = useState(false);
   const navigate = useNavigate();
   const [showMenu] = useState(undefined);
   const NavSectionData = [
     { Icon: Heart, top: "Reorder", bottom: "My Items" },
     { Icon: Person, top: "Sign In", bottom: "Account" },
+    { cart: true },
   ];
-  
+
   return (
     <HeaderContainer smallDrawer={smallDrawer}>
       <InnerWrapper showMenu={showMenu}>
@@ -62,7 +63,11 @@ const Header = ({ smallDrawer, handleNoDrawer, userData }) => {
           <Logo src={walmart} alt="logo" />
         </LogoWrapper>
 
-        <AddressDropDownContainer>
+        <AddressDropDownContainer
+          onClick={() => {
+            setOpenModal(openModal === "address" ? false : "address");
+          }}
+        >
           <AvatarWrapper
             onClick={() => {
               navigate("/profile");
@@ -92,15 +97,25 @@ const Header = ({ smallDrawer, handleNoDrawer, userData }) => {
         </SearchBarWrapper>
 
         <NavSection>
-          {NavSectionData.map(({ Icon, top, bottom }) => (
+          {NavSectionData.map(({ Icon, top, bottom, cart }) => (
             <Wrapper>
-              {/* <IconWrapper>
-            </IconWrapper> */}
-              {Icon && <Icon />}
-              <ContentWrapper>
-                <TopContent>{top}</TopContent>
-                <BottomContent>{bottom}</BottomContent>
-              </ContentWrapper>
+              {cart ? (
+                <CartWrapper>
+                  <IconWrapper>
+                    <CartIcon size="1rem" />
+                    <Badge>0</Badge>
+                  </IconWrapper>
+                  <BottomContent cart={cart}>$0.00</BottomContent>
+                </CartWrapper>
+              ) : (
+                <React.Fragment>
+                  <Icon size="1.3rem" />
+                  <ContentWrapper>
+                    <TopContent>{top}</TopContent>
+                    <BottomContent>{bottom}</BottomContent>
+                  </ContentWrapper>
+                </React.Fragment>
+              )}
             </Wrapper>
           ))}
         </NavSection>
@@ -110,40 +125,3 @@ const Header = ({ smallDrawer, handleNoDrawer, userData }) => {
 };
 
 export default Header;
-
-{
-  /* <NavIconWrapper>
-          <IconWrapper>
-            <FilledHeart width="2.4rem" height="2.4rem" />
-          </IconWrapper>
-          <IconWrapper>
-            <AlarmClock width="2.4rem" height="2.4rem" />
-          </IconWrapper>
-          <IconWrapper>
-            <NotificationIcon width="2.4rem" height="2.4rem" />
-          </IconWrapper>
-          <IconWrapper>
-            <StickyNote width="2.4rem" height="2.4rem" />
-          </IconWrapper>
-        </NavIconWrapper> */
-}
-
-//  <SearchBarAndAvatarWrapper>
-//    <ProfileInfoSection>
-//      <UserInfoWrapper>
-//        <UserName>
-//          {userData?.email ? userData.email : "Jacinta Martins"}
-//        </UserName>
-//        <UserTelNumber>
-//          {userData?.username ? userData.username : "+234-4687340-322"}
-//        </UserTelNumber>
-//      </UserInfoWrapper>
-//      <AvatarWrapper
-//        onClick={() => {
-//          navigate("/profile");
-//        }}
-//      >
-//        <Avatar src={AvatarImage} alt="avatar" />
-//      </AvatarWrapper>
-//    </ProfileInfoSection>
-//  </SearchBarAndAvatarWrapper>;

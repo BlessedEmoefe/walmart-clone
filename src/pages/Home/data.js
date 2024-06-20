@@ -9,6 +9,26 @@ import cat8 from "../../assets/images/cat8.jpg";
 import cat9 from "../../assets/images/cat9.jpg";
 import cat10 from "../../assets/images/cat10.jpg";
 
+import cat11 from "../../assets/images/cat11.jpg";
+
+import cat12 from "../../assets/images/cat12.jpg";
+import cat13 from "../../assets/images/cat13.jpg";
+import cat14 from "../../assets/images/cat14.jpg";
+import cat15 from "../../assets/images/cat15.jpg";
+import cat16 from "../../assets/images/cat16.jpg";
+import cat17 from "../../assets/images/cat17.jpg";
+import cat18 from "../../assets/images/cat18.jpg";
+import cat19 from "../../assets/images/cat19.jpg";
+import cat20 from "../../assets/images/cat20.jpg";
+import cat21 from "../../assets/images/cat21.jpg";
+import cat22 from "../../assets/images/cat22.jpg";
+
+import cat23 from "../../assets/images/cat23.jpg";
+import cat24 from "../../assets/images/cat24.jpg";
+import cat25 from "../../assets/images/cat25.jpg";
+import cat26 from "../../assets/images/cat26.jpg";
+import cat27 from "../../assets/images/cat27.jpg";
+
 import flash1 from "../../assets/images/flash1.jpeg";
 import flash2 from "../../assets/images/flash2.jpeg";
 import flash3 from "../../assets/images/flash3.jpeg";
@@ -18,6 +38,19 @@ import flash6 from "../../assets/images/flash6.jpeg";
 import flash7 from "../../assets/images/flash7.jpeg";
 import flash8 from "../../assets/images/flash8.jpeg";
 import flash9 from "../../assets/images/flash9.jpeg";
+
+import cg1 from "../../assets/images/cg1.jpg";
+import cg2 from "../../assets/images/cg2.jpg";
+import cg3 from "../../assets/images/cg3.jpg";
+import cg4 from "../../assets/images/cg4.jpg";
+import cg5 from "../../assets/images/cg5.jpg";
+import cg6 from "../../assets/images/cg6.jpg";
+import cg7 from "../../assets/images/cg7.jpg";
+import cg8 from "../../assets/images/cg8.jpg";
+import cg9 from "../../assets/images/cg9.jpg";
+import cg10 from "../../assets/images/cg10.jpg";
+import cg11 from "../../assets/images/cg11.jpg";
+import cg12 from "../../assets/images/cg12.jpg";
 
 export const catalogueData1 = [
   {
@@ -192,7 +225,7 @@ export const flashDeals = [
 
 export const catalogueData2 = [
   {
-    image: cat1,
+    image: cat11,
     buttonText: "Shop all",
     heading: "Get the Party Started",
     bigHeading: "Star-sprangled celebration",
@@ -205,7 +238,7 @@ export const catalogueData2 = [
 
 export const catalogueData3 = [
   {
-    image: cat1,
+    image: cat12,
     buttonText: "Shop all",
     heading: "Get the Party Started",
     bigHeading: "Star-sprangled celebration",
@@ -216,7 +249,7 @@ export const catalogueData3 = [
     columnEnd: 6,
   },
   {
-    image: cat2,
+    image: cat13,
     link: "Shop men's",
     title: "Laid-back looks he'll love",
     rowStart: 1,
@@ -225,7 +258,7 @@ export const catalogueData3 = [
     columnEnd: 10,
   },
   {
-    image: cat3,
+    image: cat14,
     link: "Shop tools",
     title: "For the DIY guy",
     rowStart: 6,
@@ -234,7 +267,7 @@ export const catalogueData3 = [
     columnEnd: 8,
   },
   {
-    image: cat4,
+    image: cat15,
     link: "Shop food",
     title: "Grill up a feast for him",
     rowStart: 6,
@@ -243,7 +276,7 @@ export const catalogueData3 = [
     columnEnd: 10,
   },
   {
-    image: cat5,
+    image: cat16,
     link: "Shop grooming",
     title: "Pamper your pop",
     rowStart: 1,
@@ -327,7 +360,7 @@ export const redecoration = [
 
 export const catalogueData4 = [
   {
-    image: cat1,
+    image: cat17,
     buttonText: "Shop all",
     heading: "Get the Party Started",
     bigHeading: "Star-sprangled celebration",
@@ -370,7 +403,6 @@ export const boom = [
     normalPrice: "$474.00",
     productInfo: "HOBIBEAR Boys Girls Sport Water Sandals",
     buttonText: "Add",
-    buttonText: "Add",
   },
   {
     image: flash6,
@@ -388,7 +420,6 @@ export const boom = [
     image: flash8,
     normalPrice: "$474.00",
     productInfo: "HOBIBEAR Boys Girls Sport Water Sandals",
-    buttonText: "Add",
     buttonText: "Add",
   },
   {
@@ -465,18 +496,118 @@ export const socialPosts = [
 ];
 
 export const category = [
-  { image: flash1, categoryName: "Grocery" },
-  { image: flash2, categoryName: "Home" },
-  { image: flash3, categoryName: "Patio & Garden" },
-  { image: flash4, categoryName: "Fashion" },
-  { image: flash5, categoryName: "Electronics" },
-  { image: flash6, categoryName: "Baby" },
-  { image: flash7, categoryName: "Toys" },
-  { image: flash8, categoryName: "Health & Wellness" },
-  { image: flash9, categoryName: "Personal Care" },
-  { image: flash1, categoryName: "Beauty" },
-  { image: flash1, categoryName: "Auto & Tires" },
-  { image: flash6, categoryName: "Home Improvement" },
+  { image: cg1, categoryName: "Grocery" },
+  { image: cg2, categoryName: "Home" },
+  { image: cg3, categoryName: "Patio & Garden" },
+  { image: cg4, categoryName: "Fashion" },
+  { image: cg5, categoryName: "Electronics" },
+  { image: cg6, categoryName: "Baby" },
+  { image: cg7, categoryName: "Toys" },
+  { image: cg8, categoryName: "Health & Wellness" },
+  { image: cg9, categoryName: "Personal Care" },
+  { image: cg10, categoryName: "Beauty" },
+  { image: cg11, categoryName: "Auto & Tires" },
+  { image: cg12, categoryName: "Home Improvement" },
+];
+
+export const catalogueData5 = [
+  {
+    image: cat18,
+    buttonText: "Shop all",
+    heading: "Get the Party Started",
+    bigHeading: "Star-sprangled celebration",
+    big: true,
+    rowStart: 1,
+    columnStart: 1,
+    rowEnd: 13,
+    columnEnd: 6,
+  },
+  {
+    image: cat19,
+    link: "Shop men's",
+    title: "Laid-back looks he'll love",
+    rowStart: 1,
+    columnStart: 6,
+    rowEnd: 6,
+    columnEnd: 10,
+  },
+  {
+    image: cat20,
+    link: "Shop tools",
+    title: "For the DIY guy",
+    rowStart: 6,
+    columnStart: 6,
+    rowEnd: 13,
+    columnEnd: 8,
+  },
+  {
+    image: cat21,
+    link: "Shop food",
+    title: "Grill up a feast for him",
+    rowStart: 6,
+    columnStart: 8,
+    rowEnd: 13,
+    columnEnd: 10,
+  },
+  {
+    image: cat22,
+    link: "Shop grooming",
+    title: "Pamper your pop",
+    rowStart: 1,
+    columnStart: 10,
+    rowEnd: 13,
+    columnEnd: 13,
+  },
+];
+
+export const catalogueData6 = [
+  {
+    image: cat23,
+    buttonText: "Shop all",
+    heading: "Get the Party Started",
+    bigHeading: "Star-sprangled celebration",
+    big: true,
+    rowStart: 1,
+    columnStart: 1,
+    rowEnd: 13,
+    columnEnd: 6,
+  },
+  {
+    image: cat24,
+    link: "Shop men's",
+    title: "Laid-back looks he'll love",
+    rowStart: 1,
+    columnStart: 6,
+    rowEnd: 6,
+    columnEnd: 10,
+  },
+  {
+    image: cat25,
+    link: "Shop tools",
+    title: "For the DIY guy",
+    rowStart: 6,
+    columnStart: 6,
+    rowEnd: 13,
+    columnEnd: 8,
+  },
+  {
+    image: cat26,
+    link: "Shop food",
+    title: "Grill up a feast for him",
+    rowStart: 6,
+    columnStart: 8,
+    rowEnd: 13,
+    columnEnd: 10,
+  },
+  {
+    image: cat27,
+    link: "Shop grooming",
+    title: "Pamper your pop",
+    rowStart: 1,
+    columnStart: 10,
+    rowEnd: 13,
+    columnEnd: 13,
+  },
 ];
 
 export const footerLinks = [
