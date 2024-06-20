@@ -7,7 +7,6 @@ import {
   Heading,
   BigHeading,
   Links,
-  ButtonWrapper,
 } from "./CatalogueCard.styles";
 import DefaultImage from "../../assets/images/img1.jpg";
 import { Button } from "../button/button.component";

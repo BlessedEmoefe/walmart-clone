@@ -3,7 +3,7 @@ import { FlexibleDiv } from "../../components/flexibleDiv/flexibleDiv.component"
 import { colors } from "../../infrastructure/theme/colors";
 import DefaultImage from "../../assets/images/defaultPic.jpg";
 import { fontSizes, fontWeights } from "../../infrastructure/theme/fonts";
-import { Text,Title } from "../typography/text.component";
+import { Title } from "../typography/text.component";
 import { Link } from "react-router-dom";
 
 export const CatalogueCardContainer = styled(FlexibleDiv)`

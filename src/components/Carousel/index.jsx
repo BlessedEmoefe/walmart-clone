@@ -1,19 +1,6 @@
-/*
- * component: CustomScrollingCards
- * author: Eze Bernardine May
- * Date: April 16th, 2020
- * EmBED CustomScrollingCards component
- */
-
 import React, { useState, useEffect } from "react";
 import { ScrollingContainer } from "./scrollingCard.styled";
 import { FlexibleDiv } from "../flexibleDiv/flexibleDiv.component";
-// import {
-//   BsArrowLeft as LeftIcon,
-//   BsArrowRight as RightIcon,
-// } from "react-icons/bs";
-import PropTypes from "prop-types";
-import { Spacer } from "../spacer/spacer.component";
 import {
   FaChevronRight as RightIcon,
   FaChevronLeft as LeftIcon,

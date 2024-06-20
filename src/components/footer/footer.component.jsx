@@ -1,6 +1,5 @@
 import React from "react";
 import { colors } from "../../infrastructure/theme/colors";
-import { FlexibleDiv } from "../flexibleDiv/flexibleDiv.component";
 
 import {
   FooterContainer,

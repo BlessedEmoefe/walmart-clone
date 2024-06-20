@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { FlexibleDiv } from "../flexibleDiv/flexibleDiv.component";
 import { colors } from "../../infrastructure/theme/colors";
 import { Text } from "../typography/text.component";
-import { Link } from "react-router-dom";
 
 export const FooterContainer = styled(FlexibleDiv)`
   background: ${colors.blue.footerBg};

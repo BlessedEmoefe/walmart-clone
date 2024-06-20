@@ -1,18 +1,11 @@
-import React, { useState, useContext } from "react";
-import { Button } from "../button/button.component";
+import React from "react";
 import {
   HorizontalHeaderRowContainer,
   HeadingWrapper,
   Heading,
   SubText,
   Links,
-  LinkWrapper,
-  Wrapper,
 } from "./horizontalHeaderRow.styles";
-import { FaArrowCircleLeft as BackArrow } from "react-icons/fa";
-import { PageLoader, Loader } from "../loaders/loaders.component";
-import { useNavigate } from "react-router-dom";
-import { fontSizes, fontWeights } from "../../infrastructure/theme/fonts";
 
 export const HorizontalHeaderRow = ({
   heading,

@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { FlexibleDiv } from "../flexibleDiv/flexibleDiv.component";
 import { Text } from "../typography/text.component";
 import { fontSizes, fontWeights } from "../../infrastructure/theme/fonts";
-import { lineHeights } from "../../infrastructure/theme/lineHeight";
-
 import { colors } from "../../infrastructure/theme/colors";
 
 export const Container = styled(FlexibleDiv)`

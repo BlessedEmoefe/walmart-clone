@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { FlexibleDiv } from "../flexibleDiv/flexibleDiv.component";
 import { Text } from "../typography/text.component";
-import { fontSizes, fontWeights } from "../../infrastructure/theme/fonts";
+import { fontSizes } from "../../infrastructure/theme/fonts";
 import { colors } from "../../infrastructure/theme/colors";
 
 export const CategoryCardContainer = styled(FlexibleDiv)`
