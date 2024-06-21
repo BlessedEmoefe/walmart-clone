@@ -12,9 +12,18 @@ export const ScrollingContainer = styled("div")`
     visibility: visible;
   }
 
+  @media (max-width: 800px) {
+    font-size: 1rem;
+    & .iconsWrapper {
+      background: red;
+      display:none;
+    }
+  }
+
   .main {
     width: ${(props) => props.scrollInnerWidth || "100%"};
     margin: 0 auto;
+    overflow: hidden;
   }
 
   .cardsContainer {
@@ -27,6 +36,11 @@ export const ScrollingContainer = styled("div")`
     padding: ${(props) => props.scrollInnerPad || "20px 0"};
     scroll-snap-type: x mandatory;
     gap: 1rem;
+    width: 100%;
+
+    @media (max-width: 800px) {
+      font-size: 1rem;
+    }
 
     &::-webkit-scrollbar {
       display: none;

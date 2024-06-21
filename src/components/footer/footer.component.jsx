@@ -34,6 +34,7 @@ const Footer = () => {
           </FooterTextWrapper>
         ))}
       </TopSection>
+
       <BottomSection justifyContent="center" paddingVertical="0">
         <BottomSectionText>
           ©2024 Walmart. All Rights Reserved.

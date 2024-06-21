@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 import { Button } from "../../components/button/button.component";
 import {
@@ -23,7 +23,7 @@ import { CategoryCard } from "../../components/categoryCard/categoryCard.compone
 import { SocialsCard } from "../../components/socialsCard/socialsCard.component";
 import Header from "../../components/header/header.component";
 import {
-  SubHeader,
+  // SubHeader,
   SubHeaderDropDown,
 } from "../../components/subHeader/subHeader.component";
 import { CatalogueCard } from "../../components/CatalogueCard/CatalogueCard.page";
@@ -37,7 +37,8 @@ import {
   catalogueData2,
   catalogueData3,
   catalogueData4,
-  catalogueData5,catalogueData6,
+  catalogueData5,
+  catalogueData6,
   flashDeals,
   redecoration,
   boom,
@@ -54,10 +55,15 @@ const Home = () => {
   return (
     <HomeContainer>
       <Header setOpenModal={setOpenModal} openModal={openModal} />
-      <SubHeader setOpenModal={setOpenModal} openModal={openModal} />
+      {/* <SubHeader setOpenModal={setOpenModal} openModal={openModal} /> */}
       <ContentSection>
         <BannerCard />
-        <CatalogueSection height={"120vh"}>
+        <CatalogueSection
+          height={"120vh"}
+          bigResHeight={"120vh"}
+          resHeight={"270vh"}
+          smallResHeight={"170vh"}
+        >
           {catalogueData1.map(
             ({
               image,
@@ -71,6 +77,14 @@ const Home = () => {
               columnStart,
               columnEnd,
               buttonText,
+              resRowStart,
+              resColumnStart,
+              resRowEnd,
+              resColumnEnd,
+              smallResRowStart,
+              smallResColumnStart,
+              smallResRowEnd,
+              smallResColumnEnd,
             }) => (
               <CatalogueCard
                 image={image}
@@ -84,6 +98,14 @@ const Home = () => {
                 columnStart={columnStart}
                 columnEnd={columnEnd}
                 buttonText={buttonText}
+                resRowStart={resRowStart}
+                resColumnStart={resColumnStart}
+                resRowEnd={resRowEnd}
+                resColumnEnd={resColumnEnd}
+                smallResRowStart={smallResRowStart}
+                smallResColumnStart={smallResColumnStart}
+                smallResRowEnd={smallResRowEnd}
+                smallResColumnEnd={smallResColumnEnd}
               />
             )
           )}
@@ -161,7 +183,13 @@ const Home = () => {
               )}
             </ScrollingDiv>
           </LeftSection>
-          <CatalogueSection height="60vh" width="50%">
+          <CatalogueSection
+            height={"60vh"}
+            bigResHeight={"60vh"}
+            resHeight={"50vh"}
+            smallResHeight={"40vh"}
+            width="50%"
+          >
             {catalogueData2.map(
               ({
                 image,
@@ -175,6 +203,14 @@ const Home = () => {
                 columnStart,
                 columnEnd,
                 buttonText,
+                resRowStart,
+                resColumnStart,
+                resRowEnd,
+                resColumnEnd,
+                smallResRowStart,
+                smallResColumnStart,
+                smallResRowEnd,
+                smallResColumnEnd,
               }) => (
                 <CatalogueCard
                   image={image}
@@ -189,12 +225,25 @@ const Home = () => {
                   columnEnd={columnEnd}
                   buttonText={buttonText}
                   height="100%"
+                  resRowStart={resRowStart}
+                  resColumnStart={resColumnStart}
+                  resRowEnd={resRowEnd}
+                  resColumnEnd={resColumnEnd}
+                  smallResRowStart={smallResRowStart}
+                  smallResColumnStart={smallResColumnStart}
+                  smallResRowEnd={smallResRowEnd}
+                  smallResColumnEnd={smallResColumnEnd}
                 />
               )
             )}
           </CatalogueSection>
         </DualSection>
-        <CatalogueSection height={"70vh"}>
+        <CatalogueSection
+          bigResHeight={"70vh"}
+          height={"70vh"}
+          resHeight={"400vh"}
+          smallResHeight={"200vh"}
+        >
           {catalogueData3.map(
             ({
               image,
@@ -208,6 +257,14 @@ const Home = () => {
               columnStart,
               columnEnd,
               buttonText,
+              resRowStart,
+              resColumnStart,
+              resRowEnd,
+              resColumnEnd,
+              smallResRowStart,
+              smallResColumnStart,
+              smallResRowEnd,
+              smallResColumnEnd,
             }) => (
               <CatalogueCard
                 image={image}
@@ -221,6 +278,14 @@ const Home = () => {
                 columnStart={columnStart}
                 columnEnd={columnEnd}
                 buttonText={buttonText}
+                resRowStart={resRowStart}
+                resColumnStart={resColumnStart}
+                resRowEnd={resRowEnd}
+                resColumnEnd={resColumnEnd}
+                smallResRowStart={smallResRowStart}
+                smallResColumnStart={smallResColumnStart}
+                smallResRowEnd={smallResRowEnd}
+                smallResColumnEnd={smallResColumnEnd}
               />
             )
           )}
@@ -264,7 +329,7 @@ const Home = () => {
         <DualSection>
           <LeftSection>
             <HorizontalHeaderRow
-              heading={"Discover yur Minecraft"}
+              heading={"Discover your Minecraft"}
               subText={"Toys, home, apparel & snacks"}
             />
 
@@ -298,7 +363,13 @@ const Home = () => {
               )}
             </ScrollingDiv>
           </LeftSection>
-          <CatalogueSection height="60vh" width="50%">
+          <CatalogueSection
+            height={"60vh"}
+            bigResHeight={"60vh"}
+            resHeight={"50vh"}
+            smallResHeight={"40vh"}
+            width="50%"
+          >
             {catalogueData4.map(
               ({
                 image,
@@ -312,6 +383,14 @@ const Home = () => {
                 columnStart,
                 columnEnd,
                 buttonText,
+                resRowStart,
+                resColumnStart,
+                resRowEnd,
+                resColumnEnd,
+                smallResRowStart,
+                smallResColumnStart,
+                smallResRowEnd,
+                smallResColumnEnd,
               }) => (
                 <CatalogueCard
                   image={image}
@@ -326,6 +405,14 @@ const Home = () => {
                   columnEnd={columnEnd}
                   buttonText={buttonText}
                   height="100%"
+                  resRowStart={resRowStart}
+                  resColumnStart={resColumnStart}
+                  resRowEnd={resRowEnd}
+                  resColumnEnd={resColumnEnd}
+                  smallResRowStart={smallResRowStart}
+                  smallResColumnStart={smallResColumnStart}
+                  smallResRowEnd={smallResRowEnd}
+                  smallResColumnEnd={smallResColumnEnd}
                 />
               )
             )}
@@ -373,7 +460,12 @@ const Home = () => {
             ))}
           </ScrollingDiv>
         </ProductRow>
-        <CatalogueSection height={"70vh"}>
+        <CatalogueSection
+          bigResHeight={"70vh"}
+          height={"70vh"}
+          resHeight={"400vh"}
+          smallResHeight={"200vh"}
+        >
           {catalogueData5.map(
             ({
               image,
@@ -387,6 +479,14 @@ const Home = () => {
               columnStart,
               columnEnd,
               buttonText,
+              resRowStart,
+              resColumnStart,
+              resRowEnd,
+              resColumnEnd,
+              smallResRowStart,
+              smallResColumnStart,
+              smallResRowEnd,
+              smallResColumnEnd,
             }) => (
               <CatalogueCard
                 image={image}
@@ -400,6 +500,14 @@ const Home = () => {
                 columnStart={columnStart}
                 columnEnd={columnEnd}
                 buttonText={buttonText}
+                resRowStart={resRowStart}
+                resColumnStart={resColumnStart}
+                resRowEnd={resRowEnd}
+                resColumnEnd={resColumnEnd}
+                smallResRowStart={smallResRowStart}
+                smallResColumnStart={smallResColumnStart}
+                smallResRowEnd={smallResRowEnd}
+                smallResColumnEnd={smallResColumnEnd}
               />
             )
           )}
@@ -451,7 +559,12 @@ const Home = () => {
             <Button btnText={"Learn more"} />
           </Wrapper>
         </LearnMoreSection>
-        <CatalogueSection height={"70vh"}>
+        <CatalogueSection
+          bigResHeight={"70vh"}
+          height={"70vh"}
+          resHeight={"400vh"}
+          smallResHeight={"200vh"}
+        >
           {catalogueData6.map(
             ({
               image,
@@ -465,6 +578,14 @@ const Home = () => {
               columnStart,
               columnEnd,
               buttonText,
+              resRowStart,
+              resColumnStart,
+              resRowEnd,
+              resColumnEnd,
+              smallResRowStart,
+              smallResColumnStart,
+              smallResRowEnd,
+              smallResColumnEnd,
             }) => (
               <CatalogueCard
                 image={image}
@@ -478,6 +599,14 @@ const Home = () => {
                 columnStart={columnStart}
                 columnEnd={columnEnd}
                 buttonText={buttonText}
+                resRowStart={resRowStart}
+                resColumnStart={resColumnStart}
+                resRowEnd={resRowEnd}
+                resColumnEnd={resColumnEnd}
+                smallResRowStart={smallResRowStart}
+                smallResColumnStart={smallResColumnStart}
+                smallResRowEnd={smallResRowEnd}
+                smallResColumnEnd={smallResColumnEnd}
               />
             )
           )}

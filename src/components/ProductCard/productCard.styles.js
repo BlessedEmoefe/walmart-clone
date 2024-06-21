@@ -11,6 +11,12 @@ export const Container = styled(FlexibleDiv)`
   /* height: 244px; */
   height: max-content;
   padding: 10px;
+  @media only screen and (max-width: 800px) {
+    min-width: 30vw;
+  }
+  @media only screen and (max-width: 600px) {
+    min-width: 50vw;
+  }
 `;
 
 export const ContainerWrapper = styled(FlexibleDiv)`
@@ -46,6 +52,9 @@ export const Wrapper = styled(FlexibleDiv)`
   padding: 0;
   height: max-content;
   /* background: pink; */
+  @media only screen and (max-width: 800px) {
+    align-items: flex-start;
+  }
 `;
 
 export const PriceSection = styled(FlexibleDiv)`
@@ -58,10 +67,15 @@ export const PriceWrapper = styled(FlexibleDiv)`
   margin-bottom: 0.5rem;
   gap: 0.7rem;
   justify-content: flex-start;
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: row;
+    gap: 0.3rem;
+  }
 `;
 export const NormalPrice = styled(Text)`
   padding: 0;
-  color: ${({ color }) => (color ? 'green' : colors.black.strong)};
+  color: ${({ color }) => (color ? "green" : colors.black.strong)};
   font-size: ${fontSizes.smallBody};
   line-height: ${fontSizes.body};
   font-weight: ${fontWeights.bold};
@@ -99,7 +113,3 @@ export const ProductInfoText = styled(Text)`
   font-weight: ${fontWeights.regular};
   align-self: start;
 `;
-
-
-
-

@@ -23,7 +23,7 @@ export const SocialsCardContainer = styled(FlexibleDiv)`
 export const TopSection = styled(FlexibleDiv)`
   padding: 0;
   /* gap: 2rem; */
-  background: linear-gradient(40deg, #ff9922, #9733ee);
+  /* background: linear-gradient(40deg, #ff9922, #9733ee); */
   position: relative;
   justify-content: center;
   overflow: hidden;
@@ -43,6 +43,7 @@ export const InfoSection = styled(FlexibleDiv)`
   height: max-content;
 
   @media only screen and (max-width: 800px) {
+    flex-direction: row;
   }
 `;
 
@@ -77,6 +78,7 @@ export const IconSection = styled(FlexibleDiv)`
   width: max-content;
 
   @media only screen and (max-width: 800px) {
+    flex-direction: row;
   }
 `;
 export const IconWrapper = styled(FlexibleDiv)`
@@ -101,6 +103,7 @@ export const BottomSection = styled(FlexibleDiv)`
   cursor: pointer;
 
   @media only screen and (max-width: 800px) {
+    flex-direction: row;
   }
 `;
 

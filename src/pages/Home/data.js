@@ -62,6 +62,10 @@ export const catalogueData1 = [
     columnStart: 1,
     rowEnd: 4,
     columnEnd: 4,
+    resRowStart: 3,
+    resColumnStart: 1,
+    resRowEnd: 4,
+    resColumnEnd: 7,
   },
   {
     image: cat2,
@@ -72,6 +76,14 @@ export const catalogueData1 = [
     columnStart: 1,
     rowEnd: 10,
     columnEnd: 4,
+    resRowStart: 3,
+    resColumnStart: 7,
+    resRowEnd: 6,
+    resColumnEnd: 13,
+    // smallResRowStart:,
+    // smallResColumnStart:,
+    // smallResRowEnd:,
+    // smallResColumnEnd:,
   },
   {
     image: cat3,
@@ -81,6 +93,10 @@ export const catalogueData1 = [
     columnStart: 1,
     rowEnd: 13,
     columnEnd: 4,
+    resRowStart: 12,
+    resColumnStart: 7,
+    resRowEnd: 13,
+    resColumnEnd: 13,
   },
   {
     image: cat4,
@@ -91,6 +107,14 @@ export const catalogueData1 = [
     columnStart: 4,
     rowEnd: 6,
     columnEnd: 10,
+    resRowStart: 1,
+    resColumnStart: 1,
+    resRowEnd: 3,
+    resColumnEnd: 13,
+    // smallResRowStart:,
+    // smallResColumnStart:,
+    // smallResRowEnd:,
+    // smallResColumnEnd:,
   },
   {
     image: cat5,
@@ -100,6 +124,10 @@ export const catalogueData1 = [
     columnStart: 4,
     rowEnd: 10,
     columnEnd: 7,
+    resRowStart: 7,
+    resColumnStart: 1,
+    resRowEnd: 9,
+    resColumnEnd: 13,
   },
 
   {
@@ -110,6 +138,10 @@ export const catalogueData1 = [
     columnStart: 7,
     rowEnd: 10,
     columnEnd: 10,
+    resRowStart: 4,
+    resColumnStart: 1,
+    resRowEnd: 6,
+    resColumnEnd: 7,
   },
 
   {
@@ -120,6 +152,10 @@ export const catalogueData1 = [
     columnStart: 4,
     rowEnd: 13,
     columnEnd: 10,
+    resRowStart: 6,
+    resColumnStart: 1,
+    resRowEnd: 7,
+    resColumnEnd: 13,
   },
   {
     image: cat8,
@@ -129,6 +165,10 @@ export const catalogueData1 = [
     columnStart: 10,
     rowEnd: 4,
     columnEnd: 13,
+    resRowStart: 9,
+    resColumnStart: 1,
+    resRowEnd: 10,
+    resColumnEnd: 13,
   },
   {
     image: cat9,
@@ -138,6 +178,10 @@ export const catalogueData1 = [
     columnStart: 10,
     rowEnd: 7,
     columnEnd: 13,
+    resRowStart: 10,
+    resColumnStart: 7,
+    resRowEnd: 12,
+    resColumnEnd: 13,
   },
   {
     image: cat10,
@@ -147,6 +191,10 @@ export const catalogueData1 = [
     columnStart: 10,
     rowEnd: 13,
     columnEnd: 13,
+    resRowStart: 10,
+    resColumnStart: 1,
+    resRowEnd: 13,
+    resColumnEnd: 7,
   },
 ];
 
@@ -233,6 +281,10 @@ export const catalogueData2 = [
     columnStart: 1,
     rowEnd: 13,
     columnEnd: 13,
+    resRowStart: 1,
+    resColumnStart: 1,
+    resRowEnd: 13,
+    resColumnEnd: 13,
   },
 ];
 
@@ -247,6 +299,10 @@ export const catalogueData3 = [
     columnStart: 1,
     rowEnd: 13,
     columnEnd: 6,
+    resRowStart: 1,
+    resColumnStart: 1,
+    resRowEnd: 4,
+    resColumnEnd: 13,
   },
   {
     image: cat13,
@@ -256,6 +312,10 @@ export const catalogueData3 = [
     columnStart: 6,
     rowEnd: 6,
     columnEnd: 10,
+    resRowStart: 4,
+    resColumnStart: 1,
+    resRowEnd: 5,
+    resColumnEnd: 13,
   },
   {
     image: cat14,
@@ -265,6 +325,10 @@ export const catalogueData3 = [
     columnStart: 6,
     rowEnd: 13,
     columnEnd: 8,
+    resRowStart: 5,
+    resColumnStart: 1,
+    resRowEnd: 8,
+    resColumnEnd: 7,
   },
   {
     image: cat15,
@@ -274,6 +338,10 @@ export const catalogueData3 = [
     columnStart: 8,
     rowEnd: 13,
     columnEnd: 10,
+    resRowStart: 5,
+    resColumnStart: 7,
+    resRowEnd: 8,
+    resColumnEnd: 13,
   },
   {
     image: cat16,
@@ -283,6 +351,10 @@ export const catalogueData3 = [
     columnStart: 10,
     rowEnd: 13,
     columnEnd: 13,
+    resRowStart: 8,
+    resColumnStart: 1,
+    resRowEnd: 13,
+    resColumnEnd: 13,
   },
 ];
 export const redecoration = [
@@ -369,6 +441,10 @@ export const catalogueData4 = [
     columnStart: 1,
     rowEnd: 13,
     columnEnd: 13,
+    resRowStart: 1,
+    resColumnStart: 1,
+    resRowEnd: 13,
+    resColumnEnd: 13,
   },
 ];
 
@@ -521,6 +597,10 @@ export const catalogueData5 = [
     columnStart: 1,
     rowEnd: 13,
     columnEnd: 6,
+    resRowStart: 1,
+    resColumnStart: 1,
+    resRowEnd: 4,
+    resColumnEnd: 13,
   },
   {
     image: cat19,
@@ -530,6 +610,10 @@ export const catalogueData5 = [
     columnStart: 6,
     rowEnd: 6,
     columnEnd: 10,
+    resRowStart: 4,
+    resColumnStart: 1,
+    resRowEnd: 5,
+    resColumnEnd: 13,
   },
   {
     image: cat20,
@@ -539,6 +623,10 @@ export const catalogueData5 = [
     columnStart: 6,
     rowEnd: 13,
     columnEnd: 8,
+    resRowStart: 5,
+    resColumnStart: 1,
+    resRowEnd: 8,
+    resColumnEnd: 7,
   },
   {
     image: cat21,
@@ -548,6 +636,10 @@ export const catalogueData5 = [
     columnStart: 8,
     rowEnd: 13,
     columnEnd: 10,
+    resRowStart: 5,
+    resColumnStart: 7,
+    resRowEnd: 8,
+    resColumnEnd: 13,
   },
   {
     image: cat22,
@@ -557,6 +649,10 @@ export const catalogueData5 = [
     columnStart: 10,
     rowEnd: 13,
     columnEnd: 13,
+    resRowStart: 8,
+    resColumnStart: 1,
+    resRowEnd: 13,
+    resColumnEnd: 13,
   },
 ];
 
@@ -571,6 +667,10 @@ export const catalogueData6 = [
     columnStart: 1,
     rowEnd: 13,
     columnEnd: 6,
+    resRowStart: 1,
+    resColumnStart: 1,
+    resRowEnd: 4,
+    resColumnEnd: 13,
   },
   {
     image: cat24,
@@ -580,6 +680,10 @@ export const catalogueData6 = [
     columnStart: 6,
     rowEnd: 6,
     columnEnd: 10,
+    resRowStart: 4,
+    resColumnStart: 1,
+    resRowEnd: 5,
+    resColumnEnd: 13,
   },
   {
     image: cat25,
@@ -589,6 +693,11 @@ export const catalogueData6 = [
     columnStart: 6,
     rowEnd: 13,
     columnEnd: 8,
+
+    resRowStart: 5,
+    resColumnStart: 1,
+    resRowEnd: 8,
+    resColumnEnd: 7,
   },
   {
     image: cat26,
@@ -598,6 +707,11 @@ export const catalogueData6 = [
     columnStart: 8,
     rowEnd: 13,
     columnEnd: 10,
+
+    resRowStart: 5,
+    resColumnStart: 7,
+    resRowEnd: 8,
+    resColumnEnd: 13,
   },
   {
     image: cat27,
@@ -607,6 +721,11 @@ export const catalogueData6 = [
     columnStart: 10,
     rowEnd: 13,
     columnEnd: 13,
+
+    resRowStart: 8,
+    resColumnStart: 1,
+    resRowEnd: 13,
+    resColumnEnd: 13,
   },
 ];
 

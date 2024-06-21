@@ -22,8 +22,11 @@ export const BannerCardContainer = styled(FlexibleDiv)`
 export const LeftSection = styled(FlexibleDiv)`
   padding: 0;
   width: max-content;
-  /* background: red; */
+  background: green;
   gap: 1rem;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
 `;
 export const LogoWrapper = styled(FlexibleDiv)`
   padding: 0;
@@ -37,6 +40,10 @@ export const Logo = styled.img`
 export const BannerInfo = styled(FlexibleDiv)`
   padding: 0;
   width: max-content;
+  @media (max-width: 900px) {
+    width: 100%;
+    background: red;
+  }
 `;
 export const BannerText = styled(Text)`
   padding: 0;
@@ -47,6 +54,8 @@ export const BannerText = styled(Text)`
   font-weight: 500;
   /* color: ${colors.black.regular}; */
   @media (max-width: 900px) {
+    width:100%;
+    /* word-wrap: wrap; */
   }
 `;
 

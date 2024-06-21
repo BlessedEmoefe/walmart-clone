@@ -17,8 +17,6 @@ export const TopSection = styled(FlexibleDiv)`
   @media (max-width: 1060px) {
     width: 100%;
     justify-content: center;
-    margin-right: 0;
-    order: 3;
     margin-bottom: 2rem;
   }
 `;

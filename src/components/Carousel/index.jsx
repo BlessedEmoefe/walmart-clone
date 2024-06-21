@@ -102,6 +102,7 @@ const ScrollingDiv = ({
         paddingVertical="0"
         justifyContent="center"
         resFlexDirection="row"
+        className="iconsWrapper"
       >
         <FlexibleDiv
           // height="50px"

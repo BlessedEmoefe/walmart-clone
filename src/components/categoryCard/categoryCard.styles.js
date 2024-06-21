@@ -16,7 +16,8 @@ export const CategoryCardContainer = styled(FlexibleDiv)`
     cursor: pointer;
   }
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 500px) {
+    min-width: 30vw;
   }
 `;
 export const ImageSection = styled(FlexibleDiv)`

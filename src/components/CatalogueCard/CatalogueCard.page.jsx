@@ -24,6 +24,14 @@ export const CatalogueCard = ({
   rowEnd,
   columnStart,
   columnEnd,
+  resRowStart,
+resColumnStart,
+resRowEnd,
+resColumnEnd,
+smallResRowStart,
+smallResColumnStart,
+smallResRowEnd,
+smallResColumnEnd
 }) => {
   return (
     <CatalogueCardContainer
@@ -34,6 +42,14 @@ export const CatalogueCard = ({
       rowEnd={rowEnd}
       columnStart={columnStart}
       columnEnd={columnEnd}
+      resRowStart={resRowStart}
+      resColumnStart={resColumnStart}
+      resRowEnd={resRowEnd}
+      resColumnEnd={resColumnEnd}
+      smallResRowStart={smallResRowStart}
+      smallResColumnStart={smallResColumnStart}
+      smallResRowEnd={smallResRowEnd}
+      smallResColumnEnd={smallResColumnEnd}
     >
       {buttonText ? (
         <InfoSection buttonText={buttonText}>

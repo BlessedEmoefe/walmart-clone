@@ -15,12 +15,33 @@ export const CatalogueCardContainer = styled(FlexibleDiv)`
   height: auto;
   width: auto;
   grid-area: ${({ rowStart }) => (rowStart ? rowStart : 1)} /
-    ${({ columnStart }) => (columnStart ? columnStart : 1)} / 
-    ${({ rowEnd }) => (rowEnd ? rowEnd : 3)}/
-  ${({ columnEnd }) => (columnEnd ? columnEnd : 3)};
+    ${({ columnStart }) => (columnStart ? columnStart : 1)} /
+    ${({ rowEnd }) => (rowEnd ? rowEnd : 3)} /
+    ${({ columnEnd }) => (columnEnd ? columnEnd : 3)};
   background-image: url(${({ backgroundImage }) =>
     backgroundImage ? backgroundImage : DefaultImage});
+  @media only screen and (max-width: 1000px) {
+    grid-area: ${({ resRowStart }) => (resRowStart ? resRowStart : 1)} /
+      ${({ resColumnStart }) => (resColumnStart ? resColumnStart : 1)} /
+      ${({ resRowEnd }) => (resRowEnd ? resRowEnd : 3)} /
+      ${({ resColumnEnd }) => (resColumnEnd ? resColumnEnd : 3)};
+    /* width: */
+  }
   @media only screen and (max-width: 800px) {
+    align-items: flex-start;
+  }
+  @media only screen and (max-width: 450px) {
+    /* width: 100%;
+    height: max-content;
+    align-items: flex-start;
+    grid-area: ${({ smallResRowStart }) =>
+      smallResRowStart ? smallResRowStart : 1} /
+      ${({ smallResColumnStart }) =>
+      smallResColumnStart ? smallResColumnStart : 1} /
+      ${({ smallResRowEnd }) => (smallResRowEnd ? smallResRowEnd : 3)} /
+      ${({ smallResColumnEnd }) =>
+      smallResColumnEnd ? smallResColumnEnd : 3}; */
+    /* padding: 1.5rem 1rem; */
   }
 `;
 
@@ -33,17 +54,13 @@ export const InfoSection = styled(FlexibleDiv)`
   align-items: flex-start;
   justify-content: flex-start;
   /* background: pink; */
-
-  @media only screen and (max-width: 800px) {
-  }
 `;
 export const TextWrapper = styled(FlexibleDiv)`
   padding: 0;
   width: 100%;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 500px) {
   }
 `;
-
 
 export const TitleText = styled(Title)`
   padding: 0;
@@ -53,7 +70,18 @@ export const TitleText = styled(Title)`
   line-height: ${({ big }) => (big ? "3rem" : "2rem")};
   font-weight: 700;
   color: ${colors.text.strong};
-  @media (max-width: 900px) {
+  @media (max-width: 1600px) {
+    width: 100%;
+    font-size: ${({ big }) => (big ? "1.8rem" : "1.5rem")};
+    line-height: ${({ big }) => (big ? "2rem" : "1.7rem")};
+  }
+  @media (max-width: 800px) {
+    /* width: 100%; */
+    /* font-size: ; */
+  }
+  @media (max-width: 500px) {
+    font-size: ${({ big }) => (big ? "1.3rem" : "1.2rem")};
+    line-height: ${({ big }) => (big ? "1.5rem" : "1.3rem")};
   }
 `;
 
@@ -65,7 +93,6 @@ export const Links = styled(Link)`
   cursor: pointer;
 `;
 
-
 export const Heading = styled(Title)`
   padding: 0;
   width: max-content;
@@ -75,6 +102,7 @@ export const Heading = styled(Title)`
   font-weight: 500;
   color: ${colors.white};
   @media (max-width: 900px) {
+    width: 100%;
   }
 `;
 export const BigHeading = styled(Title)`
@@ -86,6 +114,9 @@ export const BigHeading = styled(Title)`
   font-weight: 500;
   color: ${colors.white};
   @media (max-width: 900px) {
+    width: 100%;
+    font-size: 2rem;
+    line-height: 2.2rem;
   }
 `;
 
@@ -95,5 +126,3 @@ export const ButtonWrapper = styled(FlexibleDiv)`
   @media only screen and (max-width: 800px) {
   }
 `;
-
-
