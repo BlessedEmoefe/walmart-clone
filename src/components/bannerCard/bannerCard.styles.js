@@ -16,16 +16,19 @@ export const BannerCardContainer = styled(FlexibleDiv)`
 
   @media screen and (max-width: 800px) {
     width: 100%;
+    gap: 1rem;
   }
 `;
 
 export const LeftSection = styled(FlexibleDiv)`
   padding: 0;
   width: max-content;
-  background: green;
+  /* background: green; */
   gap: 1rem;
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 800px) {
     width: 100%;
+    /* gap:1rem; */
+    /* flex-direction:row; */
   }
 `;
 export const LogoWrapper = styled(FlexibleDiv)`
@@ -42,7 +45,8 @@ export const BannerInfo = styled(FlexibleDiv)`
   width: max-content;
   @media (max-width: 900px) {
     width: 100%;
-    background: red;
+
+    /* background: red; */
   }
 `;
 export const BannerText = styled(Text)`
@@ -55,6 +59,7 @@ export const BannerText = styled(Text)`
   /* color: ${colors.black.regular}; */
   @media (max-width: 900px) {
     width:100%;
+    text-align: center;
     /* word-wrap: wrap; */
   }
 `;
@@ -63,6 +68,10 @@ export const RightSection = styled(FlexibleDiv)`
   padding: 0;
   width: max-content;
   align-items: center;
+  /* background: blue; */
+  @media (max-width: 800px) {
+    flex-direction: row;
+  }
 `;
 export const CountDownSection = styled(FlexibleDiv)`
   padding: 0;
